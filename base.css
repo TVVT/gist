@@ -1,0 +1,33 @@
+/**
+ * @Description: reset
+ * @Author: zhanghang
+ * @Date: 20140326
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    /* 防止点击闪烁 */
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
+    /* 缩放网页，文字大小不变 */
+    -webkit-text-size-adjust:none;
+}
+/* 去除虚线 */
+input:focus,select:focus,textarea:focus,button:focus{
+    outline: none;
+}
+a{
+    text-decoration: none;
+    /* ios禁止页面在新窗口打开 */
+    -webkit-touch-callout:none;
+}
+/* 重置圆角和内阴影 */
+input,textarea{
+    -webkit-appearance:none;
+    border: 1px solid;
+    border-radius: 0;
+}
+/* 重置文字初始10px */
+html{
+    font-size: 62.5%;
+}

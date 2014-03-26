@@ -1,0 +1,62 @@
+/**
+ * @Description: common
+ * @Author: zhanghang
+ * @Date: 20140326
+ * @Note: 每个都加括号，避免和其他类名冲突
+*/
+
+.flexbox(){
+    display:-webkit-box;
+    display:-webkit-flex;
+    display:-ms-flexbox;
+    display:flex;
+}
+.flex(){
+    -webkit-box-flex:1;
+    -webkit-flex:1;
+    -ms-flex:1;
+    flex:1;
+}
+.clearfix(){
+    &:after{
+        content:"";
+        display:table;
+        clear:both;
+    }
+}
+.radius(@x:5px){
+    border-radius: @x;
+}
+.box-shadow(@shadow:0 0 5px #ccc){
+    box-shadow:@shadow;
+    -webkit-box-shadow:@shadow;
+}
+.box-sizing(){
+    -webkit-box-sizing: border-box;
+    box-sizing:border-box;
+}
+.translate(@x:0; @y:0){
+    -webkit-transform:translate(@x, @y);
+    transform:translate(@x, @y);
+}
+.rotate(@degree:0){
+    -webkit-transform:rotate(@degree);
+    transform:rotate(@degree);
+}
+.scale(@num:1){
+    -webkit-transform:scale(@num);
+    transform:scale(@num);
+}
+.transition(@transition){
+    -webkit-transition:@transition;
+    transition:@transition;
+}
+.gradient(@path; @colorX; @colorY){
+    background-image: -webkit-linear-gradient(@path, @colorX, @colorY);
+    background-image:-ms-linear-gradient(@path, @colorX, @colorY);
+}
+.ellipsis(){
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow:ellipsis;
+}
